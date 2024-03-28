@@ -36,8 +36,8 @@ exec --no-startup-id nm-applet
 
 # Setting mouse to left-handed
 
-exec --no-startup-id xinput set-button-map "SynPS/2 Synaptics TouchPad" 1 2 3
 exec --no-startup-id xinput set-button-map "LIFT Mouse" 3 2 1
+exec --no-startup-id xinput set-button-map "SynPS/2 Synaptics TouchPad" 1 2 3
 
 # setting natural scrolling
 
@@ -46,6 +46,19 @@ exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natu
 # tap-to-click
 
 exec --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+
+
+# wallpaper
+
+exec --no-startup-id feh --bg-scale /home/d00ksky-dev/Pictures/wallpapers/city_susncet.jpg
+
+# polybar
+
+exec --no-startup-id polybar 
+
+# picom
+
+exec_always --no-startup-id picom
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
