@@ -37,7 +37,7 @@ exec --no-startup-id nm-applet
 # Setting mouse to left-handed
 
 exec --no-startup-id xinput set-button-map "SynPS/2 Synaptics TouchPad" 1 2 3
-exec --no-startup-id ~/.config/i3/mouse_setup.sh
+exec --no-startup-id /home/d00ksky/.config/i3/mouse_setup.sh
 
 # setting natural scrolling
 
